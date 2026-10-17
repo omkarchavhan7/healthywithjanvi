@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Healthy Bites with Janvi — traditional laddoos made with pure ingredients and love.">
+  <title>Healthy Bites with Janvi | Homemade Laddoos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header" id="home">
+    <a class="brand" href="#home" aria-label="Healthy Bites with Janvi home">
+      <span class="brand-leaf">🌿</span>
+      <span><strong>Healthy Bites</strong><em>with Janvi</em><small>Pure • Healthy • Homemade</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false"
+      aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Laddu</a>
+      <a href="#why">Why Choose Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </nav>
+    <!-- <div class="header-tools">
+      <button class="tool-button" id="searchToggle" aria-label="Open search">⌕</button>
+      <a class="tool-button user-icon" href="#contact" aria-label="Account">♙</a>
+      <button class="tool-button cart" id="cartButton" aria-label="View cart">🛒<span id="cartCount">0</span></button>
+    </div> -->
+    <a class="btn btn-green" href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20order%20laddoos"
+      target="_blank">WhatsApp Now<span></span></a>
+  </header>
+
+  <form class="search-bar" id="searchBar"><input id="searchInput" type="search" placeholder="Search laddoo varieties…"
+      aria-label="Search products"><button type="submit">Search</button>
+    <p id="searchMessage" aria-live="polite"></p>
+  </form>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="pill"><span>✓</span> 100% Natural Ingredients</p>
+        <h1>Traditional Taste<br>with a <i>Healthy Twist</i></h1>
+        <p class="hero-desc">Delicious, nutritious and made with love — our Laddus bring the perfect blend of taste,
+          health and tradition to your home.</p>
+        <div class="hero-benefits">
+          <div><span>🎨</span><b>No Artificial<br>Colours</b></div>
+          <div><span>♡</span><b>Pure &amp;<br>Natural</b></div>
+          <div><span>☺</span><b>Homemade<br>with Love</b></div>
+        </div>
+        <a class="btn btn-green" href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20Orders%20laddoos"
+          target="_blank">Order on WhatsApp <span>→</span></a>
+      </div>
+      <p class="hero-note">Small Bites<br>By Happiness ♡</p>
+    </section>
+
+    <section class="trust-strip" id="trust">
+      <div><span>📦</span>
+        <p><strong>Careful Packaging</strong><small>Fresh &amp; Safe</small></p>
+      </div>
+      <div><span>⬡</span>
+        <p><strong>Secure Payments</strong><small>COD &amp; Online</small></p>
+      </div>
+      <div><span>🌿</span>
+        <p><strong>Premium Quality</strong><small>100% Natural</small></p>
+      </div>
+      <div><span>🍃</span>
+        <p><strong>Fresh preparation</strong><small>We're here for you</small></p>
+      </div>
+    </section>
+
+    <!-- <section class="products section-pad" id="products">
+      <p class="eyebrow">A LITTLE JOY IN EVERY BITE</p>
+      <h2>Our Laddoo Varieties</h2>
+      <div class="ornament">— ❧ —</div>
+      <p class="section-subtitle">Choose from our range of traditional and healthy laddoos</p>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-photo photo-motichoor"><span>Motichoor Laddoo</span></div>
+          <div class="product-info">
+            <h3>Motichoor Laddoo</h3>
+            <p>Classic taste with a royal touch. Soft, sweet and full of flavour.</p><button
+              class="btn btn-green add-cart" data-product="Motichoor Laddoo">Shop Now <span>→</span></button>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-photo photo-besan"><span>Besan Laddoo</span></div>
+          <div class="product-info">
+            <h3>Besan Laddoo</h3>
+            <p>Rich in taste, high in tradition. A timeless favourite.</p><button class="btn btn-green add-cart"
+              data-product="Besan Laddoo">Shop Now <span>→</span></button>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-photo photo-dryfruit"><span>Dry Fruit Laddoo</span></div>
+          <div class="product-info">
+            <h3>Dry Fruit Laddoo</h3>
+            <p>Power-packed with goodness. A nutty, satisfying treat.</p><button class="btn btn-green add-cart"
+              data-product="Dry Fruit Laddoo">Shop Now <span>→</span></button>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-photo photo-coconut"><span>Coconut Laddoo</span></div>
+          <div class="product-info">
+            <h3>Coconut Laddoo</h3>
+            <p>Naturally sweet, delicious and full of coconut flavour.</p><button class="btn btn-green add-cart"
+              data-product="Coconut Laddoo">Shop Now <span>→</span></button>
+          </div>
+        </article>
+      </div>
+      <p class="cart-message" id="cartMessage" aria-live="polite"></p>
+    </section> -->
+
+
+    <section class="section products-section" id="products">
+      <div class="section-heading">
+        <h2>Our Laddus Varieties</h2><span class="ornament">— ❦ —</span>
+        <p>Choose from our range of traditional and healthy Laddu</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="/assets/product_photo/healthy_bites_individual_photos_700x467_avif/raggi_photo.jpeg"
+            alt="besan laddoo">
+          <div class="product-info">
+            <h3>Ragi Laddu</h3>
+            <p>Classic taste with a royal touch. Soft, sweet and full of flavour.</p>
+            <div class="product-bottom"><strong>₹299 <small>/ 500g</small></strong><button class="btn add-btn"
+                data-product="Motichoor Laddoo" data-price="299"> <a
+                  href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20Ragi%20laddoos" target="_blank">
+                  Order Now</a></button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            src="/assets/product_photo/healthy_bites_individual_photos_700x467_avif/Rustic Moong Dal Pinni Laddoos.png"
+            alt="coconut laddoo">
+          <div class="product-info">
+            <h3>Moong Dal Laddu</h3>
+            <p>Rich in taste, high in nutrition. A timeless favourite.</p>
+            <div class="product-bottom"><strong>₹279 <small>/ 500g</small></strong><button class="btn add-btn"
+                data-product="Besan Laddoo" data-price="279"> <a
+                  href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20Moong-dal%20laddoos" target="_blank">
+                  Order Now</a> </button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="/assets/product_photo/healthy_bites_individual_photos_700x467_avif/dry_fruit_laddu_.jpeg"
+            alt="Dry fruit laddoo">
+          <div class="product-info">
+            <h3>Dry Fruit Laddu</h3>
+            <p>Power-packed with goodness. Perfect for your day.</p>
+            <div class="product-bottom"><strong>₹399 <small>/ 500g</small></strong><button class="btn add-btn"
+                data-product="Dry Fruit Laddoo" data-price="399"><a
+                  href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20Dry-fruits%20laddoos"
+                  target="_blank">
+                  Order Now</a></button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="/assets/product_photo/healthy_bites_individual_photos_700x467_avif/coconut-laddu.jpeg"
+            alt="Coconut laddoo">
+          <div class="product-info">
+            <h3>Coconut Laddu</h3>
+            <p>Naturally sweet, naturally delightful. A tropical treat.</p>
+            <div class="product-bottom"><strong>₹600 <small>/ 500g</small></strong><button class="btn add-btn"
+                data-product="Coconut Laddoo" data-price="259"><a
+                  href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20coconuts%20laddoos" target="_blank">
+                  Order Now</a></button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- about section start -->
+    <section class="about section" id="about">
+      <div class="story-image"><span>Our<br>Story ♡</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">A TRADITION OF TASTE</p>
+        <h2>Healthy Bites with Janvi</h2>
+        <p>At Healthy Bites with Janvi, we believe that good food brings happiness. Our Laddus are made with carefully
+          chosen ingredients, traditional recipes and a lot of love. We aim to offer you not just a sweet, but a
+          healthier and happier choice for your family.</p>
+        <div class="about-points"><span>🌿 <b>Pure<br>Ingredients</b></span><span>♡ <b>Made<br>with
+              Love</b></span><span>⌂ <b>Traditional<br>Recipes</b></span><span>♧ <b>For a
+              Healthier<br>Tomorrow</b></span></div>
+        <!-- <a href="#contact" class="btn btn-green">Know More
+          <span>→</span></a> -->
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- our benifits section start-->
+
+    <section class="section products-section" id="products">
+      <div class="section-heading">
+        <h2>Explore Our Laddu Benefits</h2>
+      </div>
+      <div class="products">
+
+        <!-- RAGI LADDOO -->
+        <article class="product-card">
+          <!-- <img class="product-image" src="images/ragi-laddoo.jpg" alt="Ragi laddoo"> -->
+
+          <div class="product-info product-bg-color">
+            <h3>Ragi Laddu</h3>
+            <p>Wholesome finger millet with traditional flavour.</p>
+
+            <div class="product-bottom">
+              <!-- <span class="price">₹299 / 500g</span> -->
+              <button class="btn" onclick="toggleBenefits('ragi', this)" aria-expanded="false">
+                View Benefits +
+              </button>
+            </div>
+
+            <div class="benefits" id="ragi">
+              <h4>Benefits of Ragi Laddu</h4>
+              <ul class="benefits-list">
+                <li>Ragi is naturally rich in calcium.</li>
+                <li>Provides dietary fibre.</li>
+                <li>Contains carbohydrates for energy.</li>
+                <li>Provides minerals, including iron.</li>
+              </ul>
+              <p class="disclaimer">
+                Nutritional value depends on the recipe and serving size.
+              </p>
+            </div>
+
+            <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Ragi%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+          </div>
+        </article>
+
+        <!-- Moong LADDOO -->
+        <article class="product-card">
+          <!-- <img class="product-image" src="images/besan-laddoo.jpg" alt="Besan laddoo"> -->
+
+          <div class="product-info product-bg-color">
+            <h3>Moong Dal Laddu</h3>
+            <p>A classic sweet made with gram flour.</p>
+
+            <div class="product-bottom">
+              <!-- <span class="price">₹279 / 500g</span> -->
+              <button class="btn" onclick="toggleBenefits('besan', this)" aria-expanded="false">
+                View Benefits +
+              </button>
+            </div>
+
+            <div class="benefits" id="besan">
+              <h4>Benefits of Moong dal Laddu</h4>
+              <ul class="benefits-list">
+                <li>
+                  Good source of protein.</li>
+                <li>Provides energy.</li>
+                <li>Contains dietary fiber.</li>
+                <li>Provides essential nutrients</li>
+              </ul>
+              <p class="disclaimer">
+                Nutritional value depends on the recipe and serving size.
+              </p>
+            </div>
+
+            <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Besan%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+          </div>
+        </article>
+
+        <!-- DRY FRUIT LADDOO -->
+        <article class="product-card">
+          <!-- <img class="product-image" src="images/dry-fruit-laddoo.jpg" alt="Dry fruit laddoo"> -->
+
+          <div class="product-info product-bg-color">
+            <h3>Dry Fruit Laddu</h3>
+            <p>A delicious mix of nuts and other wholesome ingredients.</p>
+
+            <div class="product-bottom">
+              <!-- <span class="price">₹399 / 500g</span> -->
+              <button class="btn" onclick="toggleBenefits('dryfruit', this)" aria-expanded="false">
+                View Benefits +
+              </button>
+            </div>
+
+            <div class="benefits" id="dryfruit">
+              <h4>Benefits of Dry Fruit Laddu</h4>
+              <ul class="benefits-list">
+                <li>Nuts provide unsaturated fats.</li>
+                <li>Many nuts contain plant-based protein.</li>
+                <li>Provides energy and a variety of minerals.</li>
+                <li>Ingredients such as dates add natural sweetness.</li>
+              </ul>
+              <p class="disclaimer">
+                Benefits vary with the nuts, seeds and sweeteners used.
+              </p>
+            </div>
+
+            <!-- <p style="margin-top:18px">
+                        <a class="btn"
+                            href="https://wa.me/919876543210?text=I%20want%20to%20order%20Dry%20Fruit%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+          </div>
+        </article>
+
+        <!-- COCONUT LADDOO -->
+        <article class="product-card">
+          <!-- <img class="product-image" src="images/coconut-laddoo.jpg" alt="Coconut laddoo"> -->
+
+          <div class="product-info product-bg-color">
+            <h3>Coconut Laddu</h3>
+            <p>A sweet treat with the rich flavour of coconut.</p>
+
+            <div class="product-bottom">
+              <!-- <span class="price">₹600 / 500g</span> -->
+              <button class="btn" onclick="toggleBenefits('coconut', this)" aria-expanded="false">
+                View Benefits +
+              </button>
+            </div>
+
+            <div class="benefits" id="coconut">
+              <h4>Benefits of Coconut Laddoo</h4>
+              <ul class="benefits-list">
+                <li>Coconut provides dietary fibre.</li>
+                <li>Contains fats that contribute energy.</li>
+                <li>Provides some minerals.</li>
+                <li>A tasty option for coconut lovers.</li>
+              </ul>
+              <p class="disclaimer">
+                Added sugar and other ingredients affect the final nutrition.
+              </p>
+            </div>
+
+            <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Coconut%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- our benifits section end -->
+
+
+    <!-- why choose us section -->
+
+    <section class="why-choose-us" id="why">
+      <div class="why-container">
+
+        <h2>Why Choose Us?</h2>
+        <p class="why-subtitle">
+          Because your health and happiness matter.
+        </p>
+
+        <div class="why-features">
+
+          <div class="why-card">
+            <div class="why-icon">
+              <span>🥜</span>
+            </div>
+            <h3>Ingredients <br>Transparency</h3>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">
+              <span>🌾</span>
+            </div>
+            <h3>Ingredients <br>Nuts</h3>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">
+              <span>♨</span>
+            </div>
+            <h3>Freshly Made<br>Every Day</h3>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">
+              <span>🏷️</span>
+            </div>
+            <h3>Clear ingredients</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="reviews section-pad" id="reviews">
+      <p class="eyebrow">KIND WORDS</p>
+      <h2>What Our Customers Say</h2>
+      <p class="section-subtitle">Real people. Real happiness.</p>
+      <div class="review-grid">
+        <article>
+          <div class="stars">★★★★★</div><strong>Priya Sharma</strong><small>Delhi</small>
+          <p>“The laddoos are absolutely delicious! Fresh and full of flavour. Highly recommend Healthy Bites with
+            Janvi.”</p>
+        </article>
+        <article>
+          <div class="stars">★★★★★</div><strong>Rohit Verma</strong><small>Mumbai</small>
+          <p>“Amazing taste and quality. The dry fruit laddoos are my favourite. Will definitely order again!”</p>
+        </article>
+        <article>
+          <div class="stars">★★★★★</div><strong>Neha Singh</strong><small>Bengaluru</small>
+          <p>“Lovely taste and carefully packed. Loved the natural ingredients. Thank you, Janvi!”</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="laddoo-cta">
+      <div class="cta-content">
+        <h2>Taste the Goodness</h2>
+        <h3>Order Now!</h3>
+
+        <p>
+          Fresh Laddus <span>•</span>
+          Happy Moments <span>•</span>
+          Home Made
+        </p>
+
+        <a href="https://wa.me/917738971623?text=Hello%2C%20I%20want%20to%20order%20laddus" class="cta-button">
+          Get in touch
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <a class="brand footer-brand" href="#home"><span class="brand-leaf">🌿</span><span><strong>Healthy
+          Bites</strong><em>with Janvi</em><small>Pure • Healthy • Homemade</small></span></a>
+    <div>
+      <h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Laddoos</a><a
+        href="#reviews">Reviews</a>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>☎ +91 7738971623</p>
+      <p>✉ salonighavri@gmail.com</p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <p class="socials"><a href="https://www.instagram.com/healthybiteswithjanvi?utm_source=qr&stkn=N2JmM3g2enpvZms2"
+          aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a><a
+          href="#" aria-label="WhatsApp">◉</a></p>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> Healthy Bites with Janvi. All Rights
+        Reserved. Designed By Omkar Chavhan</span><span>Made with ❤️ for a Healthier You</span></div>
+  </footer>
+  <script src="script.js"></script>
+
+  <script>
+
+
+    function toggleBenefits(id, button) {
+      const selectedPanel = document.getElementById(id);
+      const isAlreadyOpen = selectedPanel.classList.contains("open");
+
+      // Sabhi benefits toggles close karo
+      document.querySelectorAll(".benefits").forEach(panel => {
+        panel.classList.remove("open");
+      });
+
+      // Sabhi buttons ko default state mein lao
+      document.querySelectorAll(
+        '.product-bottom button[onclick*="toggleBenefits"]'
+      ).forEach(btn => {
+        btn.textContent = "View Benefits +";
+        btn.setAttribute("aria-expanded", "false");
+      });
+
+      // Sirf selected toggle open karo
+      if (!isAlreadyOpen) {
+        selectedPanel.classList.add("open");
+        button.textContent = "Hide Benefits −";
+        button.setAttribute("aria-expanded", "true");
+      }
+    }
+
+
+
+  </script>
+</body>
+
+</html>

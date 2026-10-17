@@ -1,0 +1,450 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laddoo Benefits | Healthy Bites with Janvi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf1;
+            color: #321b20;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            padding: 22px 0;
+            border-bottom: 1px solid #eadfce;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            color: #850b32;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #a36a36;
+        }
+
+        .nav a {
+            color: #850b32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 0 40px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(30px, 5vw, 46px);
+            color: #642336;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #72574a;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            text-align: center;
+            font-size: 32px;
+            color: #642336;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+
+        .product-card {
+            background: #fffdf8;
+            border: 1px solid #e6d8c5;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #44200b0c;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-info {
+            padding: 23px;
+        }
+
+        .product-info h3 {
+            font-family: Georgia, serif;
+            font-size: 26px;
+            color: #642336;
+            margin-bottom: 8px;
+        }
+
+        .product-info>p {
+            color: #72574a;
+            margin-bottom: 16px;
+        }
+
+        .product-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .price {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #970b32;
+            color: white;
+            text-decoration: none;
+            border: 0;
+            border-radius: 9px;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #700725;
+        }
+
+        .benefits {
+            display: none;
+            margin-top: 22px;
+            padding: 20px;
+            background: #f7eddf;
+            border-radius: 12px;
+        }
+
+        .benefits.open {
+            display: block;
+        }
+
+        .benefits h4 {
+            color: #642336;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .benefits ul {
+            list-style: none;
+        }
+
+        .benefits li {
+            margin: 9px 0;
+            color: #59453b;
+        }
+
+        .benefits li::before {
+            content: "✓ ";
+            color: #687b42;
+            font-weight: bold;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+            color: #72574a;
+            margin-top: 14px;
+        }
+
+        footer {
+            text-align: center;
+            background: #642336;
+            color: white;
+            padding: 25px 15px;
+        }
+
+        /* Tablet and mobile */
+        @media (max-width: 700px) {
+            .products {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .product-image {
+                height: 240px;
+            }
+
+            .hero {
+                padding-top: 38px;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+
+            .product-info h3 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">
+                Healthy Bites <span>with Janvi</span>
+            </div>
+            <a href="#products">Our Products ↓</a>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Every Laddoo Has Its Own Goodness</h1>
+        <p>
+            Explore our traditional laddoo varieties and discover
+            the unique ingredients and nutritional benefits of each.
+        </p>
+    </section>
+
+    <main class="container" id="products">
+        <h2 class="section-title">Explore Our Laddoo Benefits</h2>
+
+        <div class="products">
+
+            <!-- RAGI LADDOO -->
+            <article class="product-card">
+                <!-- <img class="product-image" src="images/ragi-laddoo.jpg" alt="Ragi laddoo"> -->
+
+                <div class="product-info">
+                    <h3>Ragi Laddoo</h3>
+                    <p>Wholesome finger millet with traditional flavour.</p>
+
+                    <div class="product-bottom">
+                        <!-- <span class="price">₹299 / 500g</span> -->
+                        <button class="btn" onclick="toggleBenefits('ragi', this)" aria-expanded="false">
+                            View Benefits +
+                        </button>
+                    </div>
+
+                    <div class="benefits" id="ragi">
+                        <h4>Benefits of Ragi Laddoo</h4>
+                        <ul>
+                            <li>Ragi is naturally rich in calcium.</li>
+                            <li>Provides dietary fibre.</li>
+                            <li>Contains carbohydrates for energy.</li>
+                            <li>Provides minerals, including iron.</li>
+                        </ul>
+                        <p class="disclaimer">
+                            Nutritional value depends on the recipe and serving size.
+                        </p>
+                    </div>
+
+                    <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Ragi%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+                </div>
+            </article>
+
+            <!-- BESAN LADDOO -->
+            <article class="product-card">
+                <!-- <img class="product-image" src="images/besan-laddoo.jpg" alt="Besan laddoo"> -->
+
+                <div class="product-info">
+                    <h3>Besan Laddoo</h3>
+                    <p>A classic sweet made with gram flour.</p>
+
+                    <div class="product-bottom">
+                        <!-- <span class="price">₹279 / 500g</span> -->
+                        <button class="btn" onclick="toggleBenefits('besan', this)" aria-expanded="false">
+                            View Benefits +
+                        </button>
+                    </div>
+
+                    <div class="benefits" id="besan">
+                        <h4>Benefits of Besan Laddoo</h4>
+                        <ul>
+                            <li>Gram flour provides plant-based protein.</li>
+                            <li>Contains carbohydrates for energy.</li>
+                            <li>Provides fibre and minerals.</li>
+                            <li>Ghee and nuts contribute fats and flavour.</li>
+                        </ul>
+                        <p class="disclaimer">
+                            Nutritional value depends on the recipe and serving size.
+                        </p>
+                    </div>
+
+                    <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Besan%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+                </div>
+            </article>
+
+            <!-- DRY FRUIT LADDOO -->
+            <article class="product-card">
+                <!-- <img class="product-image" src="images/dry-fruit-laddoo.jpg" alt="Dry fruit laddoo"> -->
+
+                <div class="product-info">
+                    <h3>Dry Fruit Laddoo</h3>
+                    <p>A delicious mix of nuts and other wholesome ingredients.</p>
+
+                    <div class="product-bottom">
+                        <!-- <span class="price">₹399 / 500g</span> -->
+                        <button class="btn" onclick="toggleBenefits('dryfruit', this)" aria-expanded="false">
+                            View Benefits +
+                        </button>
+                    </div>
+
+                    <div class="benefits" id="dryfruit">
+                        <h4>Benefits of Dry Fruit Laddoo</h4>
+                        <ul>
+                            <li>Nuts provide unsaturated fats.</li>
+                            <li>Many nuts contain plant-based protein.</li>
+                            <li>Provides energy and a variety of minerals.</li>
+                            <li>Ingredients such as dates add natural sweetness.</li>
+                        </ul>
+                        <p class="disclaimer">
+                            Benefits vary with the nuts, seeds and sweeteners used.
+                        </p>
+                    </div>
+
+                    <!-- <p style="margin-top:18px">
+                        <a class="btn"
+                            href="https://wa.me/919876543210?text=I%20want%20to%20order%20Dry%20Fruit%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+                </div>
+            </article>
+
+            <!-- COCONUT LADDOO -->
+            <article class="product-card">
+                <!-- <img class="product-image" src="images/coconut-laddoo.jpg" alt="Coconut laddoo"> -->
+
+                <div class="product-info">
+                    <h3>Coconut Laddoo</h3>
+                    <p>A sweet treat with the rich flavour of coconut.</p>
+
+                    <div class="product-bottom">
+                        <!-- <span class="price">₹600 / 500g</span> -->
+                        <button class="btn" onclick="toggleBenefits('coconut', this)" aria-expanded="false">
+                            View Benefits +
+                        </button>
+                    </div>
+
+                    <div class="benefits" id="coconut">
+                        <h4>Benefits of Coconut Laddoo</h4>
+                        <ul>
+                            <li>Coconut provides dietary fibre.</li>
+                            <li>Contains fats that contribute energy.</li>
+                            <li>Provides some minerals.</li>
+                            <li>A tasty option for coconut lovers.</li>
+                        </ul>
+                        <p class="disclaimer">
+                            Added sugar and other ingredients affect the final nutrition.
+                        </p>
+                    </div>
+
+                    <!-- <p style="margin-top:18px">
+                        <a class="btn" href="https://wa.me/919876543210?text=I%20want%20to%20order%20Coconut%20Laddoo"
+                            target="_blank" rel="noopener noreferrer">
+                            Order on WhatsApp
+                        </a>
+                    </p> -->
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        Healthy Bites with Janvi | Made with care and love
+    </footer>
+
+    <script>
+        // function toggleBenefits(id, button) {
+        //     const panel = document.getElementById(id);
+        //     const isOpen = panel.classList.toggle("open");
+
+        //     button.textContent = isOpen
+        //         ? "Hide Benefits −"
+        //         : "View Benefits +";
+
+        //     button.setAttribute("aria-expanded", String(isOpen));
+        // }
+
+        function toggleBenefits(id, button) {
+            const selectedPanel = document.getElementById(id);
+            const isAlreadyOpen = selectedPanel.classList.contains("open");
+
+            // Sabhi benefits toggles close karo
+            document.querySelectorAll(".benefits").forEach(panel => {
+                panel.classList.remove("open");
+            });
+
+            // Sabhi buttons ko default state mein lao
+            document.querySelectorAll(
+                '.product-bottom button[onclick*="toggleBenefits"]'
+            ).forEach(btn => {
+                btn.textContent = "View Benefits +";
+                btn.setAttribute("aria-expanded", "false");
+            });
+
+            // Sirf selected toggle open karo
+            if (!isAlreadyOpen) {
+                selectedPanel.classList.add("open");
+                button.textContent = "Hide Benefits −";
+                button.setAttribute("aria-expanded", "true");
+            }
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
